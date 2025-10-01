@@ -7,7 +7,7 @@ export async function regis(username, email, password, profileUrl, bio) {
         bio
     });
 
-    const respon2 = await fetch("https://blog-api.devnerd.store/register", {
+    const respon2 = await fetch("https://blog-api.srengchipor.dev/register", {
 
         method: "POST",
         headers: {

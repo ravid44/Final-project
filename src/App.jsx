@@ -22,6 +22,8 @@ function App() {
     const myCategories = myBlog.categories || []; 
     setBlogs(myBlog.blogs);
     setCategories(myCategories);
+
+    console.log(myCategories);
   };
 
   useEffect(() => {

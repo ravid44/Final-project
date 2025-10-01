@@ -1,6 +1,6 @@
 // src/services/user.js
 export async function updateProfile(token, bio, profileUrl) {
-  const response = await fetch("https://blog-api.devnerd.store/users/profile", {
+  const response = await fetch("https://blog-api.srengchipor.dev/users/profile", {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",

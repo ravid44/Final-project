@@ -3,7 +3,7 @@ export async function login(username, password) {
   try {
     const body = JSON.stringify({ username, password });
 
-    const myRespon = await fetch("https://blog-api.devnerd.store/login", {
+    const myRespon = await fetch("https://blog-api.srengchipor.dev/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
