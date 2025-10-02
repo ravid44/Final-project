@@ -8,7 +8,7 @@ export default function BlogDetail() {
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-    fetch(`https://blog-api.devnerd.store/blogs/${id}`)
+    fetch(`https://blog-api.srengchipor.dev/blogs/${id}`)
       .then((res) => res.json())
       .then((data) => setBlog(data))
       .catch((err) => console.error(err));
@@ -28,9 +28,9 @@ export default function BlogDetail() {
           <img
             src={blog.thumbnail}
             alt={blog.title}
-            className="my-4 w-[500px] ml-auto mr-auto"
+            className="my-4 w-[500px] ml-auto mr-auto rounded-[1.2rem]"
           />
-          <p className="text-[1.1rem] uppercase font-bold text-blue-400">
+          <p className="text-[1rem] uppercase font-bold text-blue-400">
             {blog.content}
           </p>
         </div>
@@ -38,7 +38,7 @@ export default function BlogDetail() {
         <div>
           <div className="text-[1.5rem] mb-[2rem]">
             <h3>Username: {blog.author.username}</h3>
-            <h4>Username: {blog.author.email}</h4>
+            <h4>Email: {blog.author.email}</h4>
           </div>
 
           <div className="text-[1.2rem]">
