@@ -7,7 +7,7 @@ import { store } from "./utils/store.js";
 import "./index.css";
 import App from "./App.jsx";
 import About from "./page/About.jsx";
-import Register from "./auth/register2.jsx";
+import Register from "./auth/Register.jsx";
 
 import Login from "./auth/login.jsx";
 
