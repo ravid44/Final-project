@@ -21,7 +21,7 @@ export function NavbarComponent() {
     <div className="fixed top-0 w-full">
     
       <Navbar fluid rounded className="text-black w-[100vw] flex ">
-        <NavbarBrand>
+        <NavbarBrand as = {Link} to="/">
           <span className="self-center text-[2rem] whitespace-nowrap text-xl font-semibold dark:text-white text-blue-400">
             Cambo Education
           </span>

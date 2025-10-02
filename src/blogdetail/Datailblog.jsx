@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { NavbarComponent } from "../nav/navigation";
+import { ComponentFooter } from "../footer/footer";
 
 export default function BlogDetail() {
   const { id } = useParams(); // get blog ID from URL
@@ -22,7 +23,7 @@ export default function BlogDetail() {
 
       <NavbarComponent />
 
-      <div className="flex items-center gap-[10rem] mt-[10rem] ml-[4rem]">
+      <div className="flex justify-center items-center gap-[10rem] mt-[7rem] ml-[2rem]">
         <div>
           <h1 className="text-3xl font-bold">{blog.title}</h1>
           <img
@@ -35,8 +36,8 @@ export default function BlogDetail() {
           </p>
         </div>
 
-        <div>
-          <div className="text-[1.5rem] mb-[2rem]">
+        <div className="mt-[1rem]">
+          <div className="text-[1.5rem]">
             <h3>Username: {blog.author.username}</h3>
             <h4>Email: {blog.author.email}</h4>
           </div>
@@ -54,6 +55,11 @@ export default function BlogDetail() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/*footer*/}
+      <div className="mt-[5rem]">
+        <ComponentFooter />
       </div>
     </section>
   );

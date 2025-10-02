@@ -6,6 +6,7 @@ import { getBlogs } from "./utils/blogs";
 import AllBlog from "./assets/blog/allblog";
 import { useNavigate } from "react-router-dom";
 import Listcategories from "./category/listcategories";
+import { ComponentFooter } from "./footer/footer";
 
 function App() {
   const [blogs, setBlogs] = useState([]);
@@ -71,6 +72,10 @@ function App() {
           />
         ))}
       </section>
+
+      {/*footer*/}
+      <ComponentFooter />
+
     </>
   );
 }
