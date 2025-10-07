@@ -14,6 +14,7 @@ import Login from "./auth/login.jsx";
 import Profile from "./auth/profile.jsx";
 
 import BlogDetail from "./blogdetail/Datailblog.jsx";
+import NotFound from "./notfoundpage/not-found.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -26,6 +27,9 @@ createRoot(document.getElementById("root")).render(
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/blogs/:id" element={<BlogDetail />} />
+          
+          <Route path="*" element={<NotFound />} /> 
+          
         </Routes>
       </BrowserRouter>
     </Provider>
